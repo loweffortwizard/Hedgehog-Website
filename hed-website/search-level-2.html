@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<link type="text/css" href="css/login.css" rel="stylesheet" />
+</head>
+<body>	
+<div>
+	<form action="search-result-level-2.php" method="post">
+	<!-- link to php and creation of form -->
+		<!-- options -->
+		<p> Enter Name: <input type="text" name="name"/> </p>
+		<!-- options -->
+		<p> <input type="submit" value="Find Hedgehog(s)" /> </p>
+		<!-- submission button -->
+	</form>
+	<!-- return to home -->
+	<form>
+		<input id="btnReturn" type="button" value="Return" 
+       onclick="return btnReturn_onclick()" />
+
+		<script language="javascript" type="text/javascript">
+			function btnReturn_onclick() 
+			{
+				window.location.href = "level-2-homepage.php";
+			}
+		</script>
+		<!-- submission button -->
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+	<title>New User</title> 
+	<link type="text/css" href="css/forms.css" rel="stylesheet" />
+</head>
+
+<body>
+<div>
+	<form action="Nope.php" method="post">
+	<!-- link to php and creation of form -->
+		<p> Enter Username: <input type="text" name="username" placeholder="Nope" required/> </p>
+		<p> Enter Password: <input type="password" name="password" placeholder="Nope" required autocomplete="off"/> </p>
+		<!-- options -->
+		<p> <input type="submit" value="Create" /> </p>
+		<!-- submission button -->
+	</form>
+	
+	<form action="index.html" method="post">
+		<input id="btnReturn" type="button" value="Return" 
+       onclick="return btnReturn_onclick()" />
+
+		<script language="javascript" type="text/javascript">
+			function btnReturn_onclick() 
+			{
+				window.location.href = "login.html";
+			}
+		</script>
+		<!-- submission button -->
+	</form>
+</div>
+</body>
+</html>
